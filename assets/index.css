@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.nav-element{
+    background-color: black;
+    padding: 5px 20px 5px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-element img{
+    height: 8%;
+    width: 25%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.nav-links a{
+    color: gray;
+    text-decoration: none;
+    transition: transform 0.3; 
+}
+
+.nav-links a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.content{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 92vh;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    margin-top: -2px;
+    background-color: black;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.action-btn{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.create-task-btn{
+    color: gray;
+    background-color: black;  
+    border-radius: 0.2rem;
+    font-size: 20px;
+    font-weight: bold;
+    height: 2rem;
+    padding: 0px 2px;
+    /* margin: 2px; */
+    cursor: pointer;
+    transition: transform 0.5; 
+}
+
+.create-task-btn:hover{
+    transform: scale(1.15);
+}
+
+.search{
+    background-color: #999999;
+    border-radius: 10px;
+    width: 90%;
+    padding: 0px 7px;
+}
+
+.dropdown-section{
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    width: 20px;
+    background-color: black;
+}
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.project-btn{
+    width: 100%;
+    font-size: 20px;
+    background: linear-gradient(to right, black, white);
+    color: gray;
+    text-align: start;
+    padding-top: 5px;
+    border-bottom: 0.5px solid black;
+
+}
+
+.project-btn:hover{
+    background: black;
+    color: gray;
+    cursor: pointer;
+}
+
+.project-btn-checkmark::after{
+    content: " ✓";
+    margin-left: 10px;
+    color: green;
+}
+
+.project-btn-xmark::after{
+    content: " X";
+    margin-left: 10px;
+    color: red;
+}
+
+.project-create, .project-detail{
+    width: 80%;
+    padding: 2rem 4rem;
+}
+
+.project-create-display-none, .project-detail-display-none{
+    display: none;
+}
+
+.display-none{
+    display: none;
+}
+
+.project-create-small, .project-detail-small{
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    gap: 1.5rem;
+}
+
+.color-red{
+    color: red;
+}
+
+.color-green{
+    color: green;
+}
+
+.project-detail-small-red{
+    border: 4px solid red;
+}
+
+.project-detail-small-green{
+    border: 4px solid green !important;
+}
+
+.project-img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.project-img{
+    width: 150px;
+    height: 150px;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    gap: 15px;
+    padding: 0px 15px;
+}
+
+.input-section{
+    display: flex;
+    gap: 2rem;
+}
+
+.input-section input{
+    width: 98%;
+}
+
+.input-section p{
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-section label{
+    flex: 5;
+}
+
+.input-section textarea, .input-section input{
+    border: 2px solid black;
+    border-radius: 2px;
+    flex: 5;
+}
+
+.add-task-section{
+    display: flex;
+    justify-content: end;
+}
+
+.add-task-btn{
+    border: 2px solid black;
+    padding: 4px;
+    color:  black;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-task-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+.project-detail-btn{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.project-detail-btn button{
+    padding: 4px;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.project-detail-btn-red{
+    border: 2px solid red !important;
+}
+
+.project-detail-btn-green{
+    border: 2px solid green !important;
+}
+
+.font-size-24{
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 2px;
+}
+
+
+
+
+
+/* @media  (max-width:500px) {
+    .nav-links a{
+        font-size: 10px;
+    }
+} */
